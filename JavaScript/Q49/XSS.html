@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>XSS-safe function</title>
+  </head>
+  <body>
+    <script>
+      function nastyFunction() {
+        window.location.href = window.location.href;
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
